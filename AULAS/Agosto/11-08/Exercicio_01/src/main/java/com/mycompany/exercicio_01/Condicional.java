@@ -1,5 +1,7 @@
 package com.mycompany.exercicio_01;
 
+import java.util.Scanner;
+
 public class Condicional {
 
     /*
@@ -34,6 +36,17 @@ public class Condicional {
             System.out.println("É professor");
         } else {
             System.out.println("Não é professor");
+        }
+        
+        Scanner leitor = new Scanner(System.in);
+        
+        String nome1 = "Paulo";
+        
+        System.out.println("Digite seu nome:");
+        String nome2 = leitor.nextLine();
+        
+        if(nome1.equals(nome2)){
+            System.out.println("O Nome é Igual!");
         }
     }
 
