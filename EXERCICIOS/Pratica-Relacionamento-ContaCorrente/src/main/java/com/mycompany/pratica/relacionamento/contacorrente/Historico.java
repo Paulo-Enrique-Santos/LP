@@ -1,0 +1,55 @@
+package com.mycompany.pratica.relacionamento.contacorrente;
+
+public class Historico {
+    private Integer dia;
+    private Integer mes;
+    private Integer ano;
+    private Double valor;
+    private String operacao;
+
+    public Integer getDia() {
+        return dia;
+    }
+
+    public void setDia(Integer dia) {
+        this.dia = dia;
+    }
+
+    public Integer getMes() {
+        return mes;
+    }
+
+    public void setMes(Integer mes) {
+        this.mes = mes;
+    }
+
+    public Integer getAno() {
+        return ano;
+    }
+
+    public void setAno(Integer ano) {
+        this.ano = ano;
+    }
+
+    public Double getValor() {
+        return valor;
+    }
+
+    public void setValor(Double valor) {
+        this.valor = valor;
+    }
+
+    public String getOperacao() {
+        return operacao;
+    }
+
+    public void setOperacao(String operacao) {
+        this.operacao = operacao;
+    }
+    
+    public String toString(){
+        return String.format("Operação: %s"
+                + "\nData: %d/%d/%d"
+                + "\nValor: %.2f", operacao,dia,mes,ano,valor);
+    }
+}
